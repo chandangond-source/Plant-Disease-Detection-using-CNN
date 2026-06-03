@@ -74,7 +74,7 @@ The project uses a Convolutional Neural Network (CNN) consisting of:
 
 ```bash
 Plant-Disease-Detection/
-│
+│── venv
 ├── static/
 ├── templates/
 ├── model/
@@ -86,32 +86,57 @@ Plant-Disease-Detection/
 └── README.md
 ```
 
-## ⚙️ Installation
 
-### Clone Repository
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/Plant-Disease-Detection.git
 cd Plant-Disease-Detection
 ```
 
-### Install Dependencies
+### 2. Create a Virtual Environment
+
+#### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+#### Linux / macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run Application
+### 4. Verify Installation
+
+```bash
+pip list
+```
+
+### 5. Run the Flask Application
 
 ```bash
 python app.py
 ```
 
-Open your browser and visit:
+### 6. Open in Browser
 
-```bash
+```text
 http://127.0.0.1:5000
 ```
+
 
 ## 🎯 Future Improvements
 
