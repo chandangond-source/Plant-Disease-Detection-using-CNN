@@ -4,6 +4,16 @@
 
 Plant Disease Detection is a Deep Learning-based web application that identifies plant leaf diseases from uploaded images. The system uses a Convolutional Neural Network (CNN) model trained on a large dataset of plant leaf images to provide accurate and real-time disease predictions, helping farmers and agricultural researchers detect diseases at an early stage.
 
+<h2>📸 Project Screenshots</h2>
+
+<img src="assets/1.png" width="800"  >
+
+<img src="assets/3.png" width="800"  >
+
+<img src="assets/6.png" width="800"  >
+
+<img src="assets/8.png" width="800"  >
+
 ## 🚀 Features
 
 * 🌱 Detects plant diseases from leaf images
@@ -127,3 +137,27 @@ B.Tech CSE (AI & ML)
 
 Aspiring Software Engineer | AI & Machine Learning Enthusiast
 Software Engineer | Java Developer | Python Developer | Network Security Engineer | Spring Boot | SQL | Open to Internship & Full-Time Opportunities
+
+## 🚧 Project Status
+
+This project is currently under development.
+
+### Current Progress
+
+* ✅ Dataset collection completed
+* ✅ Data preprocessing and augmentation completed
+* ✅ CNN architecture designed
+* ✅ Flask web interface created
+* 🔄 Model training in progress
+* 🔄 Performance evaluation pending
+* 🔄 Deployment in progress
+
+### Planned Features
+
+* Plant disease classification using CNN
+* Real-time image upload and prediction
+* Disease information and recommendations
+* Web-based dashboard using Flask
+
+**Note:** Model training is currently in progress. Accuracy and performance metrics will be updated after successful training and evaluation.
+
