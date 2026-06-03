@@ -1,0 +1,10 @@
+flask==3.0.3
+tensorflow==2.21.0
+opencv-python
+numpy
+Pillow
+Werkzeug==3.0.3
+matplotlib
+seaborn
+scikit-learn
+pandas

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — LeafScan AI</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="{{ url_for('index') }}" style="text-decoration:none;display:flex;align-items:center;gap:8px;">
+                <span class="logo-icon">🌿</span>
+                <span class="logo-text" style="color:white;">LeafScan <em>AI</em></span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('index') }}#upload-section">Detect</a>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <h1>About the Project</h1>
+        <p>Plant Disease Detection using Convolutional Neural Networks</p>
+
+        <!-- profile create by chandan gond  -->
+        <div class="model-arch">
+            <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Profile</h2>
+            <div class="arch-layers">
+                <div class="profile-card">
+
+                    <img src="{{ url_for('static', filename='profile.jpg') }}"  alt="Profile" class="profile-img">
+
+                    <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" >Chandan Gond</h2>
+
+                    <p class="role"> Software Engineeer ,  Cybersecurity & Network Security Engineer</p>
+
+                    <p class="about">
+                        Highly motivated and detail-oriented B.Tech fresher specializing in Computer Science & Engineering with a focus 
+on Artificial Intelligence and Machine Learning. Eager to apply theoretical knowledge and hands-on project 
+experience to contribute meaningfully to innovative technology teams. Seeking an opportunity to grow 
+professionally while delivering value through data-driven problem solving. 
+
+                    </p>
+
+                    <div class="skills">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>Networking</span>
+                        <span>Cyber Security</span>
+                        <span>Linux</span>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/chandan-gond-b92139378?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a>
+                        <a href="https://github.com/chandangond-source">GitHub</a>
+                        <a href="#">Instagram</a>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/chandan-gond-b92139378?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="btn">Contact Me</a>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="about-content">
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="about-card-icon">🎯</div>
+                <h3>Project Goal</h3>
+                <p>To build an AI-powered web application that detects plant diseases from leaf images using deep
+                    learning, helping farmers and gardeners quickly identify and treat plant diseases before they
+                    spread.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">🧠</div>
+                <h3>CNN Architecture</h3>
+                <p>The model uses a deep CNN with multiple Conv2D layers, MaxPooling, Batch Normalization, Dropout
+                    layers, and Dense classification layers. Input size: 224×224×3 RGB images.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">📊</div>
+                <h3>Dataset</h3>
+                <p>Trained on 15,000+ plant leaf images from the PlantVillage dataset, augmented using rotation,
+                    flipping, zoom, and brightness adjustments across 10 disease categories.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">⚡</div>
+                <h3>Performance</h3>
+                <p>Achieved ~93% validation accuracy using Adam optimizer with learning rate scheduling, early stopping,
+                    and data augmentation techniques to prevent overfitting.</p>
+            </div>
+        </div>
+
+        <div class="model-arch">
+            <h2>Model Architecture</h2>
+            <div class="arch-layers">
+                <div class="arch-layer input">Input Layer<br><small>224×224×3</small></div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer conv">Conv2D + ReLU<br><small>32 filters</small></div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer pool">MaxPooling2D<br><small>2×2</small></div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer conv">Conv2D + ReLU<br><small>64 filters</small></div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer pool">MaxPooling2D<br><small>2×2</small></div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer conv">Conv2D + ReLU<br><small>128 filters</small></div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer pool">GlobalAvgPooling<br><small>Flatten</small></div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer dense">Dense + Dropout<br><small>512 units</small></div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer output">Softmax Output<br><small>10 classes</small></div>
+            </div>
+        </div>
+
+        <div class="tech-details">
+            <h2>Technologies Used</h2>
+            <div class="tech-detail-grid">
+                <div class="tech-detail-item">
+                    <strong>Python 3.10</strong>
+                    <p>Core programming language for ML pipeline and web backend</p>
+                </div>
+                <div class="tech-detail-item">
+                    <strong>TensorFlow 2.x / Keras</strong>
+                    <p>Deep learning framework for building and training CNN model</p>
+                </div>
+                <div class="tech-detail-item">
+                    <strong>OpenCV</strong>
+                    <p>Image preprocessing — resizing, normalization, color space conversion</p>
+                </div>
+                <div class="tech-detail-item">
+                    <strong>Flask</strong>
+                    <p>Lightweight web framework for REST API and real-time predictions</p>
+                </div>
+                <div class="tech-detail-item">
+                    <strong>NumPy / Pandas</strong>
+                    <p>Data manipulation and array operations during training</p>
+                </div>
+                <div class="tech-detail-item">
+                    <strong>Matplotlib / Seaborn</strong>
+                    <p>Training visualization — loss curves, confusion matrix, accuracy plots</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>🌿 LeafScan AI — Plant Disease Detection System</p>
+        <p>Built with TensorFlow & Flask | ~93% Accuracy on 15,000+ Images</p>
+    </footer>
+</body>
+
+</html>
